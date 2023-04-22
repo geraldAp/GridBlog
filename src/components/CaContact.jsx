@@ -4,9 +4,9 @@ import Image from "next/image";
 const CaContact = () => {
   return (
     <div className="grid bg-[#333] p-5 md:grid-cols-3 justify-center text-white  mt-9">
-      <div className="p-4">
-        <img src="/logo_light.png" alt="" className=" mb-5 w-36 text-center" />
-        <p>
+      <div className="p-4 border-b-2 border-gray-600 md:border-b-0 ">
+        <img src="/logo_light.png" alt="" className=" text-center md:text-left  mb-5 w-36 " />
+        <p >
           News Grid is a trusted source of diverse and engaging news stories
           that are both credible and informative. This organization is committed
           to delivering accurate and impartial news coverage on a wide range of
@@ -19,17 +19,17 @@ const CaContact = () => {
           society.
         </p>
       </div>
-      <div className="p-4">
+      <div className="p-4 border-b-2 border-gray-600 md:border-b-0 ">
         <h3 className="text-center  font-bold text-3xl text-white  mb-5"> Join Our Club</h3>
        <p className="mb-3">
        Join our club to get fantastic perks and stuff. You will likely not regret it.
        </p>
 <button className="w-full py-1 bg-red-700 hover:opacity-80">Join Now </button>
       </div>
-      <div className="text-right p-4">
-        <h3 className="text-right  font-bold text-2xl text-white mb-5">Get in touch</h3>
+      <div className=" text-center md:text-right p-4">
+        <h3 className=" text-center md:text-right  font-bold text-2xl text-white mb-5">Get in touch</h3>
 
-        <div className="grid gap-7">
+        <div className="grid gap-7 ">
           <div>
             <h4 className=" font-semibold font-chivo text-xl">Phone</h4>
             <p>

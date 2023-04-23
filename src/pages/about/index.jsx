@@ -1,8 +1,11 @@
 import React from "react";
-
+import Head from "next/head";
 const About = () => {
   return (
     <div>
+   <Head>
+    <title>Blog | About</title>
+  </Head>
       <h1 className="font-bold text-center text-4xl text-red-800 mb-5">About us</h1>
       <div className="grid gap-3 text-gray-600">
         <p>

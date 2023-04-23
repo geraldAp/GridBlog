@@ -1,13 +1,9 @@
-
-
 import Head from "next/head";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "@/components/BlogCard";
 import { useState } from "react";
 
-const graphCms = new GraphQLClient(
-  "https://api-us-east-1-shared-usea1-02.hygraph.com/v2/clgowzcyf74ut01t2cog0fw3k/master"
-);
+const graphCms = new GraphQLClient(process.env.GRAPH_CMS_API_KEY);
 
 const POSTS_PER_PAGE = 3; // number of posts to show per page
 
@@ -69,7 +65,6 @@ const Home = ({ initialPosts }) => {
     <>
       <Head>
         <title>Blog | Home</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
         <main>

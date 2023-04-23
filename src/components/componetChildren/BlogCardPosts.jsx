@@ -56,7 +56,7 @@ const BlogCardPosts = ({ posts }) => {
                   {post.author.name} - {post.datePublished}
                 </h3>
                 <h2 className=" mb-1 font-medium text-lg">{post.title}</h2>
-                <p className="mb-2 text-xs font-chivo font-normal  text-gray-600 ">
+                <p className="mb-2 text-xs md:text-[13px] font-chivo font-normal  text-gray-600 ">
                   {post.summary}
                 </p>
                 <button className="border rounded-[4px] py-1 px-3 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black bg-black text-white">

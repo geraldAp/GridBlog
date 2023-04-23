@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "../styles/BlogCard.module.css";
 import BlogCardPosts from "./componetChildren/BlogCardPosts";
 import { Typewriter } from "react-simple-typewriter";
 {

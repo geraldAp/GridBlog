@@ -83,7 +83,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import { useRouter } from "next/router";
 
 const graphCms = new GraphQLClient(
-  "https://api-us-east-1-shared-usea1-02.hygraph.com/v2/clgowzcyf74ut01t2cog0fw3k/master"
+  process.env.GRAPH_CMS_API_KEY
 );
 
 const POST_QUERY = gql`

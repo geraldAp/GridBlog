@@ -3,7 +3,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "@/components/BlogCard";
 import { useState } from "react";
 
-const graphCms = new GraphQLClient(process.env.GRAPH_CMS_API_KEY);
+const graphCms = new GraphQLClient(  process.env.NEXT_PUBLIC_HYGRAPH_API_KEY);
 
 const POSTS_PER_PAGE = 3; // number of posts to show per page
 

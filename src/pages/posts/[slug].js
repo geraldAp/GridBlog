@@ -3,7 +3,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import { useRouter } from "next/router";
 
 const graphCms = new GraphQLClient(
-  process.env.GRAPH_CMS_API_KEY
+  process.env.NEXT_PUBLIC_HYGRAPH_API_KEY
 );
 
 const POST_QUERY = gql`

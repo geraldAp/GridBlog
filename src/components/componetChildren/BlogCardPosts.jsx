@@ -39,15 +39,15 @@ const BlogCardPosts = ({ posts }) => {
   return (
     <div>
       <h3>Trending News</h3>
-      <div className="grid justify-center gap-5 md:grid-cols-3 ">
+      <div className="grid justify-center gap-5 md:grid-cols-2 lg:grid-cols-3 ">
         {posts.map((post) => (
           <div
             key={post.id}
-            className="w-100% p-2 h-[400px] md:h-[400px]  shadow shadow-lg hover:shadow-2xl rounded-lg "
+            className="w-100% p-2 h-[400px] lg:h-[400px]  shadow-lg hover:shadow-2xl rounded-lg "
           >
             <Link href={`/posts/${post.slug}`}>
               <img
-                className="w-[80%] md:w-[100%] md:m-0 m-auto border-0 rounded-md h-[60%] md:h-[50%]"
+                className="w-[100%] md:w-[100%] md:m-0 m-auto border-0 rounded-md h-[35%] md:h-[50%] lg:h-[50%]"
                 src={post.coverPhoto.url}
                 alt=""
               />

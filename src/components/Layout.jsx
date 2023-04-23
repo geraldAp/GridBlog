@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
-      <div className="m-auto w-[80%] md:w-[80%]">
+      <div className="m-auto mt-[115px] w-[80%] md:w-[80%]">
       {children}
       </div>
       <CaContact/>

@@ -68,7 +68,7 @@ const BlogCard = ({ posts }) => {
           </h5>
         </div>
 
-        <div className="relative w-[100%] h-[300px] mb-3 md:h-[400px] border rounded-xl ">
+        <div className="relative hidden md:block w-[100%] h-[300px] mb-3 md:h-[400px] border rounded-xl ">
           <img
             className="w-full h-full border rounded-xl "
             src={posts[0].coverPhoto.url}
@@ -80,7 +80,7 @@ const BlogCard = ({ posts }) => {
               {posts[0].title}
             </h1>
             <div className="mb-3 text-sm font-chivo font-normal md:text-xl">
-              <p>{posts[0].summary}</p>
+              <p className=" hidden md:block">{posts[0].summary}</p>
             </div>
             <Link href={`/posts/${posts[0].slug}`}>
               <button className="border rounded-[4px] py-1 px-3 font-medium hover:bg-transparent hover:text-white hover:border-2 bg-white text-slate-800 ">

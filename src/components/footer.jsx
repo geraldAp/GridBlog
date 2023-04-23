@@ -6,11 +6,11 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-[#444] flex justify-between items-center p-4">
-      <div>
+      <div className=" hidden md:block">
         <Image src="/logo_light.png" alt="" width={90} height={40} />
       </div>
 
-      <p className="text-white font-medium">
+      <p className="text-white text-xs md:font-medium">
         Copyright © 2023, All Rights Reserved
       </p>
       <div className="flex text-white gap-4">

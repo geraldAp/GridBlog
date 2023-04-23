@@ -61,15 +61,15 @@ const BlogPost = ({ post }) => {
     <main className="w-[90%]  m-auto">
       <div className="w-full ">
         <img
-          className=" mb-1 h-[450px] border rounded-xl"
+          className=" mb-1 h-60 md:h-[350px] lg:h-[450] border rounded-xl"
           src={post.coverPhoto.url}
           alt=""
         />
         <h3 className="  mb-1 text-gray-600">
           {post.author.name} - {post.datePublished}
         </h3>
-        <h2 className=" mb-1 font-bold text-2xl">{post.title}</h2>
-        <div className="mb-3  text-gray-600  font-normal " dangerouslySetInnerHTML={{__html: post.content.html}}>
+        <h2 className=" mb-1 font-bold text-xl md:text-2xl">{post.title}</h2>
+        <div className="mb-3  text-gray-600 text-sm md:text-base text-left md:text-justify  font-normal " dangerouslySetInnerHTML={{__html: post.content.html}}>
 
       </div>
       </div>

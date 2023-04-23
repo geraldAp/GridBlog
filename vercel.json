@@ -1,0 +1,8 @@
+{
+    "build": {
+      "env": {
+        "HYGRAPH_API_ENDPOINT": "https://api-us-east-1-shared-usea1-02.hygraph.com/v2/clgowzcyf74ut01t2cog0fw3k/master"
+      }
+    }
+  }
+  

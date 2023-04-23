@@ -77,7 +77,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                className={`text-sm md:text-base font-medium text-red-700 hover:text-gray-600 hover:border-b-2 hover:border-red-7001
+                className={`text-sm md:text-base font-medium text-red-700 hover:text-gray-600 hover:border-b-2 hover:border-red-700
         ${router.pathname === "/about" ? "border-b-2 border-black " : null}
         `}
                 href="/about"

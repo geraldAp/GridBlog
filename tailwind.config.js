@@ -15,6 +15,7 @@ module.exports = {
     fontFamily: {
       roboto: ['Roboto', 'sans-serif'],
       chivo: ['Chivo Mono', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
       
     },
   },

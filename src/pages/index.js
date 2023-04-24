@@ -41,7 +41,7 @@ export async function getStaticProps() {
     props: {
       initialPosts: posts,
     },
-    revalidate: 10,
+    revalidate: 60,
   };
 }
 
@@ -78,7 +78,7 @@ const Home = ({ initialPosts }) => {
             </button>
           ) : (
             <button
-              className="border rounded-[4px] py-1 px-3 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black bg-black text-white"
+              className="border transition hover:ease-in rounded-[4px] py-1 px-3 font-medium hover:bg-transparent hover:text-black hover:border-2 hover:border-black bg-black text-white"
               onClick={loadMore}
             >
               Load More

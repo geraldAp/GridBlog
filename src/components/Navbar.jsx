@@ -46,16 +46,16 @@ const Navbar = () => {
           </div>
           {/* socials */}
           <div className=" hidden  md:flex gap-4">
-            <Link className="text-gray-400 " href="#">
+            <Link className="text-gray-600 hover:text-red-800 " href="#">
               <FaInstagram />
             </Link>
-            <Link className="text-gray-400" href="#">
+            <Link className="text-gray-600 hover:text-red-800" href="#">
               <FaFacebook />
             </Link>
-            <Link className="text-gray-400" href="#">
+            <Link className="text-gray-600 hover:text-red-800" href="#">
               <FaTwitter />
             </Link>
-            <Link className="text-gray-400" href="#">
+            <Link className="text-gray-600 hover:text-red-800" href="#">
               <FaLinkedin />
             </Link>
           </div>

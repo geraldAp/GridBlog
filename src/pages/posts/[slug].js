@@ -64,10 +64,10 @@ const BlogPost = ({ post }) => {
   }
 
   return (
-    <main className="w-[90%]  m-auto">
+    <main className=" w-full md:w-[90%]  m-auto">
       <div className="w-full ">
         <img
-          className=" mb-1 h-60 md:h-[350px] lg:h-[450] border rounded-xl"
+          className="  mb-1 h-60 md:h-[350px] object-cover lg:h-[600px] border rounded-xl"
           src={post.coverPhoto.url}
           alt=""
         />

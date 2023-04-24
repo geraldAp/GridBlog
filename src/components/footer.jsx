@@ -14,16 +14,16 @@ const Footer = () => {
         Copyright © 2023, All Rights Reserved
       </p>
       <div className="flex text-white gap-4">
-        <Link className="" href="#">
+        <Link className=" hover:text-red-700" href="#">
           <FaInstagram />
         </Link>
-        <Link className="" href="#">
+        <Link className=" hover:text-red-700" href="#">
           <FaFacebook />
         </Link>
-        <Link className="" href="#">
+        <Link className=" hover:text-red-700" href="#">
           <FaTwitter />
         </Link>
-        <Link className="" href="#">
+        <Link className=" hover:text-red-700" href="#">
           <FaLinkedin />
         </Link>
       </div>

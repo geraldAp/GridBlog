@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 const CaContact = () => {
-  // const top = () =>{
-  //   window.scrollTo({
-  //     top: "50px",
-  //     behavior: "smooth"
-  //   })
-  // }
+  const top = () =>{
+    window.scrollTo({
+      top: "50px",
+      behavior: "smooth"
+    })
+  }
   return (
     <div>
       <div className="grid bg-[#333] p-5 md:grid-cols-3 justify-center text-white  mt-9">

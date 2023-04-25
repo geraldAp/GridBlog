@@ -81,13 +81,13 @@ const CaContact = () => {
           </div>
         </div>
       </div>
-      {/* <button
+      <button
         onClick={top}
         className=" animate-bounce absolute z-20 right-[12rem] "
       >
      <Image  src="/scroll-up.png" alt="" width={35} height={25}/>
         
-      </button> */}
+      </button>
     </div>
   );
 };

@@ -4,7 +4,27 @@ const About = () => {
   return (
     <div>
    <Head>
-    <title>Blog | About</title>
+    <title>About us - News Grid</title>
+    <meta
+          name="description"
+          content="News Grid is a comprehensive news organization that provides accurate, reliable, and impartial news stories on a diverse range of topics. Learn more about our commitment to credibility, impartiality, diversity, engagement, transparency, and accountability."
+        />
+        <meta name="keywords" content="News, Journalism, Credibility, Impartiality, Diversity, Engagement, Transparency, Accountability" />
+        <meta name="Gerald" content="News Grid" />
+        <meta property="og:title" content="About us - News Grid" />
+        <meta
+          property="og:description"
+          content="News Grid is a comprehensive news organization that provides accurate, reliable, and impartial news stories on a diverse range of topics. Learn more about our commitment to credibility, impartiality, diversity, engagement, transparency, and accountability."
+        />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:url" content="https://gridblog.vercel.app/about" />
+        <meta name="twitter:card" content="Best blog Site worldwide" />
+        <meta name="twitter:title" content="About us - News Grid" />
+        <meta
+          name="twitter:description"
+          content="News Grid is a comprehensive news organization that provides accurate, reliable, and impartial news stories on a diverse range of topics. Learn more about our commitment to credibility, impartiality, diversity, engagement, transparency, and accountability."
+        />
+        <meta name="twitter:image" content="/logo.png" />
   </Head>
       <h1 className="font-bold text-center text-4xl text-red-800 mb-5">About us</h1>
       <div className="grid gap-3 text-gray-600">

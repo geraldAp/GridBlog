@@ -30,7 +30,7 @@ const BlogCard = ({ posts }) => {
               pauseOnMouseEnter: true,
             }}
             modules={[Autoplay, EffectFade, Pagination]}
-            className="  relative w-[100%] mb-3 md:h-[550px] border rounded-xl "
+            className="  relative w-[100%] mb-3 md:h-[450px] lg:h-[550px] border rounded-xl "
           
           >
             {posts.map((post0) => (

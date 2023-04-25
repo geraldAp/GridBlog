@@ -3,7 +3,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "@/components/BlogCard";
 import { useState } from "react";
 
-const graphCms = new GraphQLClient(  process.env.NEXT_PUBLIC_HYGRAPH_API_KEY);
+const graphCms = new GraphQLClient(process.env.NEXT_PUBLIC_HYGRAPH_API_KEY);
 
 const POSTS_PER_PAGE = 3; // number of posts to show per page
 
@@ -46,6 +46,9 @@ export async function getStaticProps() {
 }
 
 const Home = ({ initialPosts }) => {
+
+
+
   const [posts, setPosts] = useState(initialPosts.slice(0, POSTS_PER_PAGE));
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
@@ -60,11 +63,28 @@ const Home = ({ initialPosts }) => {
     setPosts([...posts, ...newPosts]);
     setLoading(false);
   };
-
+  const metaTitle = "Latest Blog Posts | Explore Our Insights and Ideas";
+  const metaDescription = "Stay up to date with our latest blog posts. Our team of experts share insights and ideas on various topics. From technology to lifestyle, we cover it all. Check out our blog now!";
+  const metaKeywords = "blog, posts, technology, lifestyle, insights, ideas";
+  const metaAuthor = "Gerald";
+  const metaImageUrl = "/logo.png";
+  
   return (
     <>
       <Head>
         <title>Blog | Home</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="keywords" content={metaKeywords} />
+        <meta name="author" content={metaAuthor} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImageUrl} />
+        <meta property="og:url" content="https://gridblog.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={metaImageUrl} />
       </Head>
       <div>
         <main>
@@ -85,6 +105,7 @@ const Home = ({ initialPosts }) => {
             </button>
           )}
         </main>
+    
       </div>
     </>
   );
